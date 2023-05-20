@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LeadingHeader from "../components/LeadingHeader.astro";
+import HeroSection from "../components/HeroSection.astro";
+import ChargeStation from "../components/ChargeStation.astro";
+import ModelS from "../components/ModelS.astro";
+import ModelY from "../components/ModelY.astro";
+import Model3 from "../components/Model3.astro";
+import ModelX from "../components/ModelX.astro";
+import Accesories from "../components/Accesories.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <LeadingHeader />
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth"
+  >
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+    <div class="snap-center">
+      <ModelY />
+    </div>
+    <div class="snap-center">
+      <Model3 />
+    </div>
+    <div class="snap-center">
+      <ModelX />
+    </div>
+    <div class="snap-center">
+      <Accesories />
+    </div>
+
+    <div class="snap-center">
+      <ChargeStation />
+    </div>
+  </main>
+</Layout>
